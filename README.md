@@ -2,7 +2,7 @@
 
 <img width="2385" height="642" alt="image" src="https://github.com/user-attachments/assets/594c28cc-66ae-40ac-b8a6-8c39e6f14de4" />
 
-# FarmTech na Era da Cloud Computing
+# O Despertar da Rede Neural
 
 ## 👨‍🎓 Integrantes: 
 - [CAUAN OTTO RODRIGUES SOUSA (RM567940)](https://www.linkedin.com/in/cauanotto)
