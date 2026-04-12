@@ -1,0 +1,15 @@
+# plantas.yaml — Configuração do dataset para YOLOv5
+# Este arquivo deve ser colocado na pasta FIAP/ do Google Drive
+
+# Caminhos das imagens (ajuste se sua estrutura for diferente)
+train: /content/drive/MyDrive/FIAP/images/train
+val: /content/drive/MyDrive/FIAP/images/val
+test: /content/drive/MyDrive/FIAP/images/test
+
+# Número de classes
+nc: 2
+
+# Nomes das classes (devem corresponder aos IDs usados na rotulação)
+# Classe 0 = planta_saudavel
+# Classe 1 = planta_doente
+names: ['planta_saudavel', 'planta_doente']
