@@ -43,7 +43,7 @@ A base de imagens foi organizada manualmente e rotulada via [MakeSense.ai](https
 
 > ⚠️ As imagens de validação e teste são **inéditas** — não foram utilizadas durante o treinamento, evitando overfitting e garantindo uma avaliação realista do modelo.
 
-**Link do dataset:** [Google Drive](https://drive.google.com/drive/folders/1JokeVmMrXhfRU3kh9TMkYff-34FXyE9f)
+**Link do dataset:** [Google Drive] (https://drive.google.com/drive/folders/1k2qjHwhvis7LOG9c4rGY4TjStCHAxpw7?usp=sharing)
 
 ### Estrutura de pastas no Google Drive
 
