@@ -148,7 +148,7 @@ Construímos uma **CNN manualmente** com camadas Conv2D + MaxPooling + Dense, se
 - **Resultado:** acurácia de X.XX%
 - **Arquitetura:** Conv2D(16) → MaxPool → Conv2D(32) → MaxPool → Conv2D(64) → MaxPool → Flatten → Dense(64) → Dense(32) → Dense(2, softmax)
 
-## 📊 Tabela Comparativa Final
+## 📊 Tabela Comparativa Final (PENDENTE)
 
 | Critério | YOLO Adaptável (E1) | YOLO Tradicional | CNN do Zero |
 |----------|-------------------|-----------------|-------------|
@@ -163,7 +163,7 @@ Construímos uma **CNN manualmente** com camadas Conv2D + MaxPooling + Dense, se
 
 > ⚠️ **Preencha com os valores reais** obtidos após executar o notebook da Entrega 2.
 
-## 🔍 Análise Crítica
+## 🔍 Análise Crítica (PENDENTE)
 
 ### Facilidade de uso / Integração
 
@@ -183,7 +183,7 @@ Construímos uma **CNN manualmente** com camadas Conv2D + MaxPooling + Dense, se
 - **CNN do Zero:** treino mais rápido (~X min), inferência mais rápida (~Xms).
 - **YOLO Adaptável:** treino mais longo (~XX min), mas inferência adequada para tempo real (~30ms).
 
-## 🧪 Conclusão — Entrega 2
+## 🧪 Conclusão — Entrega 2 (PENDENTE)
 
 Na Visão Computacional, **não existe uma solução universalmente melhor** — tudo depende do cenário de aplicação. Para o problema da FarmTech Solutions:
 
@@ -203,7 +203,7 @@ Na Visão Computacional, **não existe uma solução universalmente melhor** —
 
 ### 📓 Notebook — Entrega 2 (PENDENTE)
 
-📔 [Acessar no Google Colab](https://colab.research.google.com/drive/COLOQUE_SEU_LINK_AQUI_ENTREGA2)
+📔 [Acessar no Google Colab]([(https://colab.research.google.com/drive/1VbfTGjOEqX12XvEHvUrjENbUaVGTJY5E?usp=sharing))]
 
 > O notebook contém a implementação completa das três abordagens, com código executado, métricas comparativas e análise crítica em Markdown.
 
