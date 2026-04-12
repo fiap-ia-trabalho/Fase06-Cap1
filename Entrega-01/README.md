@@ -203,7 +203,7 @@ Na Visão Computacional, **não existe uma solução universalmente melhor** —
 
 ### 📓 Notebook — Entrega 2 (PENDENTE)
 
-📔 [Acessar no Google Colab]([(https://colab.research.google.com/drive/1VbfTGjOEqX12XvEHvUrjENbUaVGTJY5E?usp=sharing))]
+📔 [Acessar no Google Colab](https://colab.research.google.com/drive/1VbfTGjOEqX12XvEHvUrjENbUaVGTJY5E?usp=sharing)
 
 > O notebook contém a implementação completa das três abordagens, com código executado, métricas comparativas e análise crítica em Markdown.
 
