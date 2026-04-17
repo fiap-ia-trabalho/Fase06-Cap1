@@ -37,9 +37,9 @@ A base de imagens foi organizada manualmente e rotulada via [MakeSense.ai](https
 
 | Classe | Treino | Validação | Total | 
 |--------|--------|-----------|-------|
-| Planta Saudável | 79 | 5 | 84 |
+| Planta Saudável | 74 | 5 | 79 |
 | Planta Doente | 50 | 5 | 55 | - Pendente - Precisa rotular
-| **Total** | **129** | **10** | **139** |
+| **Total** | **124** | **10** | **134** |
 
 > ⚠️ As imagens de validação e teste são **inéditas** — não foram utilizadas durante o treinamento, evitando overfitting e garantindo uma avaliação realista do modelo.
 
@@ -50,11 +50,11 @@ A base de imagens foi organizada manualmente e rotulada via [MakeSense.ai](https
 ```
 FIAP/
 ├── images/
-│   ├── train/      (84 imagens: 79 saudáveis + 50 doentes)
+│   ├── train/      (124 imagens: 74 saudáveis + 50 doentes)
 │   ├── val/        (10 imagens: 5 saudáveis + 5 doentes)
-│   ├── labels/ Pendente - Precisa rotular
-│   ├── train/      (84 arquivos .txt com bounding boxes) - Pendente - Precisa completar rotulação
-│   └── val/        (10 arquivos .txt com bounding boxes) - Pendente - Precisa completar rotulação
+│   ├── labels/ Incompleto
+│   ├── train/      (84 arquivos .txt com bounding boxes) - Pendente - Precisa completar rotulação das plantas doentes
+│   └── val/        (10 arquivos .txt com bounding boxes) 
 └── plantas.yaml    (configuração do dataset para o YOLOv5)
 ```
 
