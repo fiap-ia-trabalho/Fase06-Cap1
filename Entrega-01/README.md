@@ -43,7 +43,7 @@ A base de imagens foi organizada manualmente e rotulada via [MakeSense.ai](https
 
 > ⚠️ As imagens de validação e teste são **inéditas** — não foram utilizadas durante o treinamento, evitando overfitting e garantindo uma avaliação realista do modelo.
 
-**Link do dataset:** [Google Drive](https://drive.google.com/drive/u/1/folders/1JokeVmMrXhfRU3kh9TMkYff-34FXyE9f)
+**Link do dataset:** [Google Drive](https://drive.google.com/drive/folders/12rNWw6JFQgN4MIsqNE8bFzhTBLGkdEbG?usp=drive_link)
 
 ### Estrutura de pastas no Google Drive
 
@@ -87,7 +87,7 @@ FIAP/
 
 > Inclua aqui 2-4 prints das imagens de teste processadas pelo modelo (disponíveis em `yolov5/runs/detect/teste_final/`). Para incluir no README do GitHub, faça upload das imagens na pasta do repositório e referencie-as assim:
 >
-> `![Teste 1](caminho/da/imagem.jpg)`
+> `![Teste 1](caminho/da/imagem.jpg)` - PENDENTE
 
 ## 🧪 Conclusões — Entrega 1
 
