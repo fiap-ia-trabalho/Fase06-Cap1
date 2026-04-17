@@ -31,15 +31,15 @@ Desenvolver e avaliar um sistema de **detecção de objetos** utilizando **YOLOv
 
 ---
 
-## 📊 Dataset
+## 📊 Dataset (PENDENTE A ROTULAÇÃO DAS IMAGENS DAS PLANTAS DOENTES)
 
 A base de imagens foi organizada manualmente e rotulada via [MakeSense.ai](https://www.makesense.ai/), seguindo o formato de anotação YOLO (bounding boxes com coordenadas normalizadas).
 
-| Classe | Treino | Validação | Teste | Total |
-|--------|--------|-----------|-------|-------|
-| Planta Saudável | 32 | 4 | 4 | 40 |
-| Planta Doente | 32 | 4 | 4 | 40 |
-| **Total** | **64** | **8** | **8** | **80** |
+| Classe | Treino | Validação | Total | 
+|--------|--------|-----------|-------|
+| Planta Saudável | 79 | 5 | 84 |
+| Planta Doente | 50 | 5 | 55 | - Pendente - Precisa rotular
+| **Total** | **64** | **10** | **80** |
 
 > ⚠️ As imagens de validação e teste são **inéditas** — não foram utilizadas durante o treinamento, evitando overfitting e garantindo uma avaliação realista do modelo.
 
@@ -50,10 +50,9 @@ A base de imagens foi organizada manualmente e rotulada via [MakeSense.ai](https
 ```
 FIAP/
 ├── images/
-│   ├── train/      (64 imagens: 32 saudáveis + 32 doentes)
-│   ├── val/        (8 imagens: 4 saudáveis + 4 doentes)
-│   └── test/       (8 imagens: 4 saudáveis + 4 doentes)
-├── labels/
+│   ├── train/      (84 imagens: 79 saudáveis + 50 doentes)
+│   ├── val/        (10 imagens: 5 saudáveis + 5 doentes)
+│   ├── labels/ Pendente - Precisa rotular
 │   ├── train/      (64 arquivos .txt com bounding boxes)
 │   └── val/        (8 arquivos .txt com bounding boxes)
 └── plantas.yaml    (configuração do dataset para o YOLOv5)
