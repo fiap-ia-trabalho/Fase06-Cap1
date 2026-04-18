@@ -76,10 +76,10 @@ FIAP/
 
 | Métrica | 30 Épocas | 60 Épocas |
 |---------|----------|----------|
-| Precision | X.XXX | X.XXX |
-| Recall | X.XXX | X.XXX |
-| mAP@0.5 | X.XXX | X.XXX |
-| mAP@0.5:0.95 | X.XXX | X.XXX |
+| Precision | 0.2195 | 0.2338 |
+| Recall | 0.5000 | 0.4943 |
+| mAP@0.5 | 0.2659  | 0.2873 |
+| mAP@0.5:0.95 | 0.1301 | 0.1370 |
 
 > ⚠️ **Preencha com os valores reais** obtidos após executar o notebook.
 
