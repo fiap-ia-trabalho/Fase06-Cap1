@@ -53,7 +53,7 @@ FIAP/
 │   ├── train/      (124 imagens: 74 saudáveis + 50 doentes)
 │   ├── val/        (10 imagens: 5 saudáveis + 5 doentes)
 │   ├── labels/ Incompleto
-│   ├── train/      (84 arquivos .txt com bounding boxes) - Pendente - Precisa completar rotulação das plantas doentes
+│   ├── train/      (84 arquivos .txt com bounding boxes) 
 │   └── val/        (10 arquivos .txt com bounding boxes) 
 └── plantas.yaml    (configuração do dataset para o YOLOv5)
 ```
