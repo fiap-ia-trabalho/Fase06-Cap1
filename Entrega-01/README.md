@@ -85,9 +85,12 @@ FIAP/
 
 ### Exemplos de detecção
 
-> Inclua aqui 2-4 prints das imagens de teste processadas pelo modelo (disponíveis em `yolov5/runs/detect/teste_final/`). Para incluir no README do GitHub, faça upload das imagens na pasta do repositório e referencie-as assim:
->
-> `![Teste 1](caminho/da/imagem.jpg)` - PENDENTE
+Exemplos de detecção:
+
+![Detecção 1](imagem_1.jpg)
+![Detecção 2](imagem_2.jpg)
+![Detecção 3](imagem_3.jpg)
+![Detecção 4](imagem_4.jpg)
 
 ## 🧪 Conclusões — Entrega 1
 
