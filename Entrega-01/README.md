@@ -70,7 +70,7 @@ FIAP/
 4. **Validação:** métricas automáticas (Precision, Recall, mAP@0.5, mAP@0.5:0.95) calculadas sobre o conjunto de validação (8 imagens)
 5. **Teste:** inferência sobre **imagens inéditas** com `detect.py` para demonstrar capacidade de generalização
 
-## 📈 Resultados — Entrega 1 (PENDENTE)
+## 📈 Resultados — Entrega 1
 
 ### Comparação: 30 vs 60 épocas
 
