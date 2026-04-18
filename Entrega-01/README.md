@@ -87,10 +87,10 @@ FIAP/
 
 Exemplos de detecção:
 
-![Detecção 1](imagem_1.jpg)
-![Detecção 2](imagem_2.jpg)
-![Detecção 3](imagem_3.jpg)
-![Detecção 4](imagem_4.jpg)
+![Detecção 1](assets/imagem_1.jpg)
+![Detecção 2](assets/imagem_2.jpg)
+![Detecção 3](assets/imagem_3.jpg)
+![Detecção 4](assets/imagem_4.jpg)
 
 ## 🧪 Conclusões — Entrega 1
 
