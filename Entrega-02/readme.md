@@ -18,7 +18,7 @@
 ---
 
 ## 📌 Contexto
-A **FarmTech Solutions** busca automatizar a detecção precoce de doenças em plantações. Este projeto é uma Prova de Conceito (PoC) que avalia diferentes arquiteturas de visão computacional para substituir a inspeção manual lenta e custosa.
+A **FarmTech Solutions** busca automatizar a detecção precoce de doenças em plantações. [cite_start]Este projeto é uma Prova de Conceito (PoC) que avalia diferentes arquiteturas de visão computacional para substituir a inspeção manual lenta e custosa [cite: 2389-2393].
 
 ---
 
@@ -50,40 +50,40 @@ Comparação de desempenho após o *fine-tuning* do modelo YOLOv5s:
 # 📦 ENTREGA 2 — Comparação de Abordagens
 
 ## 🔬 Objetivo
-Confrontar a **YOLO Adaptável** com modelos genéricos e redes neurais construídas do zero para determinar a melhor solução para a FarmTech Solutions.
+[cite_start]Confrontar a **YOLO Adaptável** com modelos genéricos e redes neurais construídas do zero para determinar a melhor solução para a FarmTech Solutions [cite: 2394-2395].
 
 ## 📊 Tabela Comparativa Final (Resultados Reais)
 
 | Critério | YOLO Adaptável (E1) | YOLO Tradicional (COCO) | CNN do Zero |
 |----------|-------------------|-----------------|-------------|
 | **Tipo de tarefa** | Detecção (Localiza + Classifica) | Detecção Genérica | Classificação de Imagem |
-| **Treinamento** | Sim (Fine-tuning) | Não (Zero-shot) | Sim (Do zero) |
-| **Tempo de Treino** | ~30 min | 0 min | **12.21 segundos** |
-| **Inferência/Foto** | **~30ms** | **~3078ms (3.08s)** | **~56.9ms** |
-| **Precisão/Acurácia**| **mAP@0.5 = 0.2873** | N/A (Classes erradas) | **Acurácia = 50.00%** |
-| **Detecta Doenças?** | ✅ Sim | ❌ Não (Viu vaso/mesa) | ✅ Sim (Apenas classifica) |
+| **Treinamento** | Sim (*fine-tuning*) | Não (*zero-shot*) | Sim (do zero) |
+| **Tempo de Treino** | ~8 min (30ep) / 12 min (60ep) | 0 min | **11.19 segundos** |
+| **Inferência/Foto** | **~30ms** | **~2674ms (2.67s)** | **~52.8ms** |
+| **Precisão/Acurácia**| **mAP@0.5 = 0.2873** | N/A (classes erradas) | **Acurácia = 50.00%** |
+| **Detecta Doenças?** | ✅ Sim | ❌ Não (viu vaso/mesa) | ✅ Sim (só classifica) |
 
 ---
 
 ## 🔍 Análise Crítica
 
 ### 1. Facilidade de Uso e Integração
-- **YOLO Tradicional:** Embora seja a mais simples (plug-and-play), provou-se **inútil** para o problema. Ao analisar a planta, o modelo detectou **"diningtable" (56%)** e **"bowl" (95%)**, falhando em reconhecer a folhagem.
-- **YOLO Adaptável:** Exige rotulação prévia, mas entrega o resultado esperado pelo cliente.
-- **CNN do Zero:** Requer esforço manual de arquitetura e organização de pastas. Resolve apenas a classificação, sem indicar onde a doença está na folha.
+- **YOLO Tradicional:** Embora seja a mais simples (*plug-and-play*), provou-se **inútil** para o problema. [cite_start]Ao analisar a planta, o modelo detectou **"diningtable" (56%)** e **"bowl" (95%)**, falhando em reconhecer a folhagem agrícola [cite: 2636-2637, 3213-3214].
+- **YOLO Adaptável:** Exige rotulação prévia, mas entrega o resultado esperado pelo cliente com localização precisa.
+- **CNN do Zero:** Requer esforço manual de arquitetura e organização de pastas. [cite_start]Resolve apenas a classificação, sem indicar onde a doença está na folha [cite: 3216-3217].
 
 ### 2. Precisão e Generalização
-- **YOLO Adaptável:** Apresentou o melhor equilíbrio. Consegue distinguir as classes agrícolas com mAP superior.
-- **CNN do Zero:** Obteve **50% de acurácia**, porém demonstrou um forte **viés (bias)**. A Matriz de Confusão revelou que o modelo classificou todas as imagens como "Saudáveis", falhando em detectar 100% dos casos de doença no teste devido ao dataset desbalanceado.
+- **YOLO Adaptável:** Apresentou o melhor equilíbrio, sendo capaz de distinguir as classes agrícolas com mAP superior.
+- **CNN do Zero:** Obteve **50.0% de acurácia**, porém demonstrou um forte **viés (bias)**. [cite_start]A Matriz de Confusão revelou que o modelo classificou todas as imagens como "Saudáveis", falhando em detectar 100% dos casos de doença no teste[cite: 3226].
 
 ### 3. Eficiência Computacional
-- A **CNN** é a mais rápida de treinar (0.2 min) e muito leve na predição (~56.9ms).
-- A **YOLO Adaptável** é a mais eficiente para uso em tempo real (inferência de ~30ms), sendo a escolha ideal para monitoramento via câmeras ou drones.
+- A **CNN** é a mais rápida de treinar (11.19s) e leve na predição (~52.8ms).
+- [cite_start]A **YOLO Adaptável** é a mais eficiente para uso em tempo real (inferência de ~30ms), sendo a escolha ideal para monitoramento via câmeras ou drones [cite: 3234-3235].
 
 ---
 
 ## 🧪 Conclusão Geral
-Para a FarmTech Solutions, a **YOLO Adaptável é a única solução viável**. Ela une a capacidade de localização precisa da patologia com um tempo de resposta adequado para o campo. A CNN do zero é uma alternativa acadêmica interessante, mas sua incapacidade de localizar o objeto e a sensibilidade ao desbalanceamento de dados a tornam menos confiável para diagnósticos críticos.
+Para a FarmTech Solutions, a **YOLO Adaptável é a única solução viável**. Ela une a capacidade de localização precisa da patologia com um tempo de resposta adequado para o campo. A CNN do zero é uma alternativa acadêmica interessante, mas sua sensibilidade ao desbalanceamento de dados e incapacidade de localização a tornam menos confiável para diagnósticos críticos em campo.
 
 ---
 
