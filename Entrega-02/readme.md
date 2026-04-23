@@ -58,9 +58,9 @@ Confrontar a **YOLO Adaptável** com modelos genéricos e redes neurais constru�
 |----------|-------------------|-----------------|-------------|
 | **Tipo de tarefa** | Detecção (Localiza + Classifica) | Detecção Genérica | Classificação de Imagem |
 | **Treinamento** | Sim (*fine-tuning*) | Não (*zero-shot*) | Sim (do zero) |
-| **Tempo de Treino** | ~8 min (30ep) / 12 min (60ep) | 0 min | **11.19 segundos** |
-| **Inferência/Foto** | **~30ms** | **~2674ms (2.67s)** | **~52.8ms** |
-| **Precisão/Acurácia**| **mAP@0.5 = 0.2873** | N/A (classes erradas) | **Acurácia = 50.00%** |
+| **Tempo de Treino** | ~8 min (30ep) / 12 min (60ep) | 0 min | 11.19 segundos |
+| **Inferência/Foto** | ~30ms | ~2674ms (2.67s) | ~52.8ms |
+| **Precisão/Acurácia**| mAP@0.5 = 0.2873 | N/A (classes erradas) | Acurácia = 50.00% |
 | **Detecta Doenças?** | ✅ Sim | ❌ Não (viu vaso/mesa) | ✅ Sim (só classifica) |
 
 ---
