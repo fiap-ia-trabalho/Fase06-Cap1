@@ -147,7 +147,7 @@ Esse tempo viabiliza aplicações em **tempo real** (câmeras em drones agrícol
 
 ### 📓 Notebook — Entrega 1
 
-📔 [Acessar no Google Colab](https://colab.research.google.com/drive/1oGBpVkBhn6dQvNuHnu6EJLyhXG9fafff?usp=sharing)
+📔 [Acessar no Google Colab](https://colab.research.google.com/drive/1h3FO7aenvSVseIK1gm8VwoWGXvFAxCcs?usp=sharing)
 
 > O notebook contém células de código executadas, células de markdown documentando todas as etapas e a análise comparativa de 30 vs 60 épocas.
 
