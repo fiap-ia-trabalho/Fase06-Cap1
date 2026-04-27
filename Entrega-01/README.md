@@ -36,7 +36,7 @@ Avaliar arquiteturas de visão computacional capazes de identificar plantas saud
 
 ---
 
-## 📊 Dataset (PENDENTE A ROTULAÇÃO DAS IMAGENS DAS PLANTAS DOENTES)
+## 📊 Dataset 
 
 A base de imagens foi coletada e rotulada manualmente via [MakeSense.ai](https://www.makesense.ai/), seguindo o formato de anotação YOLO (bounding boxes com coordenadas normalizadas).
 
