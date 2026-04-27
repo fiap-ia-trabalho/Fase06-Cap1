@@ -276,7 +276,7 @@ Na Visão Computacional, **não existe uma solução universalmente melhor** —
 
 ## 🎬 Vídeo Demonstrativo
 
-📹 [Assistir no YouTube (não listado)](COLOQUE_AQUI_O_LINK_DO_YOUTUBE)
+📹 [Assistir no YouTube (não listado)](https://youtu.be/0Z5sFWLi-hM)
 
 > Vídeo de até 5 minutos demonstrando o treinamento, validação, teste e resultados das Entregas 1 e 2.
 
