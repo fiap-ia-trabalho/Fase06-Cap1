@@ -2,7 +2,7 @@
 
 <img width="2385" height="642" alt="image" src="https://github.com/user-attachments/assets/594c28cc-66ae-40ac-b8a6-8c39e6f14de4" />
 
-# O Despertar da Rede Neural
+# O Despertar da Rede Neural — Fase 6, Capítulo 1
 
 ## 👨‍🎓 Integrantes
 - [CAUAN OTTO RODRIGUES SOUSA (RM567940)](https://www.linkedin.com/in/cauanotto)
@@ -19,7 +19,7 @@
 
 ## 📌 Contexto
 
-A **FarmTech Solutions**, empresa de tecnologia voltada ao agronegócio, está expandindo sua atuação para a área de **visão computacional**. Um cliente do setor agrícola procurou a empresa com uma necessidade crítica: a **detecção precoce de doenças em plantações**, que hoje é feita manualmente — um processo lento, sujeito a falhas e com altos custos operacionais.
+A **FarmTech Solutions**, empresa de tecnologia voltada ao agronegócio, está expandindo sua atuação para a área de **visão computacional**. Um cliente do setor agrícola apresentou uma necessidade crítica: a **detecção precoce de doenças em plantações** — processo hoje feito manualmente, lento, sujeito a falhas e com altos custos operacionais.
 
 Este projeto foi desenvolvido como **prova de conceito (PoC)** para demonstrar ao cliente a viabilidade de um sistema automatizado de detecção baseado em redes neurais, capaz de analisar imagens de plantas e identificar sinais de doença.
 
@@ -36,7 +36,7 @@ Avaliar arquiteturas de visão computacional capazes de identificar plantas saud
 
 ---
 
-## 📊 Dataset 
+## 📊 Dataset
 
 A base de imagens foi coletada e rotulada manualmente via [MakeSense.ai](https://www.makesense.ai/), seguindo o formato de anotação YOLO (bounding boxes com coordenadas normalizadas).
 
@@ -66,7 +66,7 @@ FIAP/
 
 ---
 
-# 📦 ENTREGA 1 — YOLO Adaptável com Transfer Learning
+# 📦 ENTREGA 1 — YOLO Adaptável (Transfer Learning)
 
 ## ⚙️ Metodologia
 
@@ -104,15 +104,6 @@ Comparação de desempenho após o *fine-tuning* do modelo YOLOv5s, com métrica
 
 🏆 **Modelo final selecionado: 60 épocas** (melhor mAP@0.5 e localização mais precisa).
 
-### Exemplos de detecção
-
-Exemplos de detecção:
-
-![Detecção 1](assets/imagem_1.jpg)
-![Detecção 2](assets/imagem_2.jpg)
-![Detecção 3](assets/imagem_3.jpg)
-![Detecção 4](assets/imagem_4.jpg)
-
 ### Análise da comparação 30 vs 60 épocas
 
 - O **mAP@0.5** permaneceu praticamente estável (0.338 → 0.339), indicando que o modelo já havia atingido seu plateau de detecção genérica nas primeiras 30 épocas.
@@ -125,7 +116,7 @@ Exemplos de detecção:
 Tempo médio observado no `detect.py` sobre as 8 imagens de teste:
 
 - Pre-process: 0.6 ms/imagem
-- **Inferência: ~22 ms/imagem**
+- **Inferência: ~31.7 ms/imagem**
 - NMS (Non-Maximum Suppression): 18 ms/imagem
 
 Esse tempo viabiliza aplicações em **tempo real** (câmeras em drones agrícolas, ESP32-CAM em estufas).
@@ -135,7 +126,7 @@ Esse tempo viabiliza aplicações em **tempo real** (câmeras em drones agrícol
 **Pontos fortes:**
 - O **YOLOv5** demonstrou capacidade de detectar plantas doentes mesmo com um dataset reduzido.
 - O **transfer learning** foi essencial para convergência rápida com poucos dados de treino.
-- O tempo de inferência (~22 ms por imagem) viabiliza aplicações em **tempo real**.
+- O tempo de inferência (~31.7 ms por imagem) viabiliza aplicações em **tempo real**.
 - A separação rigorosa entre treino, validação e teste garante a confiabilidade das métricas.
 - O treinamento é rápido (~9 minutos para 60 épocas em GPU T4), permitindo iterações ágeis.
 
@@ -147,7 +138,7 @@ Esse tempo viabiliza aplicações em **tempo real** (câmeras em drones agrícol
 
 ### 📓 Notebook — Entrega 1
 
-📔 [Acessar no Google Colab](https://colab.research.google.com/drive/1h3FO7aenvSVseIK1gm8VwoWGXvFAxCcs?usp=sharing)
+📔 [Acessar no Google Colab](https://colab.research.google.com/drive/1oGBpVkBhn6dQvNuHnu6EJLyhXG9fafff?usp=sharing)
 
 > O notebook contém células de código executadas, células de markdown documentando todas as etapas e a análise comparativa de 30 vs 60 épocas.
 
@@ -187,7 +178,7 @@ Confrontar a **YOLO Adaptável** (Entrega 1) com duas abordagens alternativas pa
 | **Tipo de tarefa** | Detecção (Localiza + Classifica) | Detecção genérica | Classificação |
 | **Treinamento necessário?** | Sim (*fine-tuning*) | Não (*zero-shot*) | Sim (do zero) |
 | **Tempo de treinamento** | ~6 min (30ep) / ~9 min (60ep) | 0 min | 11.19 segundos |
-| **Tempo de inferência** | ~22 ms/img | ~2674 ms/img (2.67s) | ~52.8 ms/img |
+| **Tempo de inferência** | ~31.7 ms/img | ~2674 ms/img (2.67s) | ~52.8 ms/img |
 | **Precisão / Acurácia** | mAP@0.5 = 0.339 | N/A (classes erradas) | Acurácia = 50.00% |
 | **Detecta plantas doentes?** | ✅ Sim | ❌ Não (viu mesa/tigela) | ✅ Sim (só classifica) |
 | **Facilidade de uso** | Média (requer dataset rotulado) | Muito fácil (sem setup) | Média (requer labels) |
@@ -211,7 +202,7 @@ Confrontar a **YOLO Adaptável** (Entrega 1) com duas abordagens alternativas pa
 - **YOLO Adaptável:** ~9 min para 60 épocas (mais pesado, mas com resultado superior).
 
 ### 4. Tempo de inferência (predição)
-- **YOLO Adaptável:** ~22 ms/imagem — adequado para **monitoramento em tempo real** via câmeras ou drones.
+- **YOLO Adaptável:** ~31.7 ms/imagem — adequado para **monitoramento em tempo real** via câmeras ou drones.
 - **CNN do Zero:** ~52.8 ms/imagem — rápida, mas só classifica.
 - **YOLO Tradicional:** ~2674 ms/imagem — muito lenta, pois a YOLOv3 (Darknet) tem arquitetura mais pesada que a YOLOv5.
 
@@ -278,7 +269,7 @@ Na Visão Computacional, **não existe uma solução universalmente melhor** —
 
 📹 [Assistir no YouTube (não listado)](https://youtu.be/0Z5sFWLi-hM)
 
-> Vídeo de até 5 minutos demonstrando o treinamento, validação, teste e resultados das Entregas 1 e 2.
+> Vídeo demonstrando o treinamento, validação, teste e resultados das Entregas 1 e 2.
 
 ---
 
@@ -293,4 +284,3 @@ Na Visão Computacional, **não existe uma solução universalmente melhor** —
 - Material didático FIAP — Fase 6, Capítulo 10: Técnicas de Detecção e Segmentação
 - Redmon, J. et al. *"You Only Look Once: Unified, Real-Time Object Detection"* (2016)
 - Simonyan, K. & Zisserman, A. *"Very Deep Convolutional Networks"* (VGG16, 2014)
-
